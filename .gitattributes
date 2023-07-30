@@ -1,0 +1,3 @@
+*.csv binary diff=text
+*.lclproj binary
+*.lclrec binary
