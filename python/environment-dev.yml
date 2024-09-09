@@ -1,0 +1,11 @@
+name: lightning-analyses-dev
+
+channels:
+  - defaults
+
+dependencies:
+  - python = 3
+  - black
+  - ipython
+  - pandas
+  - scipy
