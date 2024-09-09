@@ -15,11 +15,7 @@ print("-" * 80)
 print("Loading raw data...")
 print()
 
-data = pd.read_csv(
-    data_dir / "simple.csv",
-    header=0,
-    # names=['group', 'subject', 'data']
-)
+data = pd.read_csv(data_dir / "simple_raw.csv", header=0)
 print(data)
 print()
 
@@ -29,18 +25,11 @@ print("-" * 80)
 print("Processing data...")
 print()
 
-# Add column names
-data = data.rename(columns={data.columns[0]: "group", data.columns[1]: "subject"})
-# Tidy up group column
-data["group"] = data["group"].str.replace(":", "").ffill()
-# Drop extra header rows
-data = data.dropna(axis="index", subset="subject")
-# Drop summary rows (i.e. only keep subject data)
-data = data.loc[data["subject"].str.startswith("sub-"), :]
 # Set the group/subject columns as the index
 data = data.set_index(["group", "subject"])
-# And tidy up type of raw data
-data = data.apply(pd.to_numeric)
+# Only retain the numeric data
+data = data.loc[:, "value"]
+
 print(data)
 print()
 
@@ -55,9 +44,7 @@ print(summary_stats)
 print()
 
 stats = scipy.stats.ttest_ind(
-    data.loc["Thumb", "Measurement"],
-    data.loc["Finger", "Measurement"],
-    alternative="two-sided",
+    data.loc["Thumb"], data.loc["Finger"], alternative="two-sided"
 )
 print(stats)
 print()

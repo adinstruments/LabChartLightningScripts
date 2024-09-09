@@ -13,41 +13,37 @@ This should produce the following output:
 --------------------------------------------------------------------------------
 Loading raw data...
 
-   Unnamed: 0 Unnamed: 1                 Measurement
-0         NaN        NaN  Pulse Transducer_bpf_eRate
-1         NaN        NaN                        Mean
-2         NaN        NaN                         BPM
-3      Thumb:       Mean                       76.44
-4         NaN     sub-01                       74.95
-5         NaN     sub-04                       81.64
-6         NaN     sub-05                       72.72
-7     Finger:       Mean                       81.11
-8         NaN     sub-02                       80.72
-9         NaN     sub-03                       85.68
-10        NaN     sub-06                       76.92
+    group subject                            recording  ... unit calculation  value
+0   Thumb  sub-01  Recordings/sub-01_2023-07-31.lclrec  ...  BPM        Mean  74.95
+1   Thumb  sub-04  Recordings/sub-04_2023-07-31.lclrec  ...  BPM        Mean  81.64
+2   Thumb  sub-05  Recordings/sub-05_2023-07-31.lclrec  ...  BPM        Mean  72.72
+3  Finger  sub-02  Recordings/sub-02_2023-07-31.lclrec  ...  BPM        Mean  80.72
+4  Finger  sub-03  Recordings/sub-03_2023-07-31.lclrec  ...  BPM        Mean  85.68
+5  Finger  sub-06  Recordings/sub-06_2023-07-31.lclrec  ...  BPM        Mean  76.92
+
+[6 rows x 9 columns]
 
 --------------------------------------------------------------------------------
 Processing data...
 
-                Measurement
-group  subject
-Thumb  sub-01         74.95
-       sub-04         81.64
-       sub-05         72.72
-Finger sub-02         80.72
-       sub-03         85.68
-       sub-06         76.92
+group   subject
+Thumb   sub-01     74.95
+        sub-04     81.64
+        sub-05     72.72
+Finger  sub-02     80.72
+        sub-03     85.68
+        sub-06     76.92
+Name: value, dtype: float64
 
 --------------------------------------------------------------------------------
 Running statistics...
 
-       Measurement
-              mean       std
+             mean       std
 group
-Finger   81.106667  4.392782
-Thumb    76.436667  4.642115
+Finger  81.106667  4.392782
+Thumb   76.436667  4.642115
 
-Ttest_indResult(statistic=-1.2656219021582897, pvalue=0.2743468357028812)
+TtestResult(statistic=-1.2656219021582897, pvalue=0.2743468357028812, df=4.0)
 
 --------------------------------------------------------------------------------
 ```
