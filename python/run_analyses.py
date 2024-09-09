@@ -32,7 +32,7 @@ print()
 # Add column names
 data = data.rename(columns={data.columns[0]: "group", data.columns[1]: "subject"})
 # Tidy up group column
-data["group"] = data["group"].str.replace(":", "").fillna(method="ffill")
+data["group"] = data["group"].str.replace(":", "").ffill()
 # Drop extra header rows
 data = data.dropna(axis="index", subset="subject")
 # Drop summary rows (i.e. only keep subject data)
