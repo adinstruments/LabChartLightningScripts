@@ -1,11 +1,18 @@
 # Python: Analyses of table data from LabChart Lightning
 
-We use [Conda](https://conda.io) to manage dependencies, but 
-
+We use [Conda](https://conda.io) to manage dependencies, but
+[pandas](https://pandas.pydata.org/) and [SciPy](https://scipy.org/) are all
+that are needed to run the simple examples. Installing the packages using Conda
+can be done using the following commands:
 ```shell
 conda env create --file environment.yml
 conda activate lightning-analyses
-./run_simple_analyses.py
+```
+
+Running an analysis of the table data from the simple project can then be done
+using:
+```shell
+python run_simple_analyses.py
 ```
 
 This should produce the following output:
