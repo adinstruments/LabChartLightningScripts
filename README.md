@@ -18,5 +18,6 @@ The repository contains:
    can be found in `simple_standard.csv` and `simple_raw.csv`.
  + A set of example scripts that demonstrate how to run analyses of the
    exported data in the raw format for different programming languages:
+    + [`JASP/`](./JASP)
     + [`python/`](./python)
     + [`R/`](./R)
