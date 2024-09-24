@@ -12,7 +12,7 @@ conda activate lightning-analyses
 Running an analysis of the table data from the simple project can then be done
 using:
 ```shell
-python run_simple_analyses.py
+python run_analyses.py
 ```
 
 This should produce the following output:

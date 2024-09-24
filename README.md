@@ -19,3 +19,4 @@ The repository contains:
  + A set of example scripts that demonstrate how to run analyses of the
    exported data in the raw format for different programming languages:
     + [`python/`](./python)
+    + [`R/`](./R)
