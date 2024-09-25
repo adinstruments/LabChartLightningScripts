@@ -19,5 +19,6 @@ The repository contains:
  + A set of example scripts that demonstrate how to run analyses of the
    exported data in the raw format for different programming languages:
     + [`JASP/`](./JASP)
-    + [`python/`](./python)
+    + [`MATLAB/`](./MATLAB)
+    + [`Python/`](./Python)
     + [`R/`](./R)
