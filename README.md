@@ -1,8 +1,20 @@
 # Analyses of table data from LabChart Lightning
 
-This repository contains a set of example scripts for analysing summary data
-exported from the table in
-[LabChart Lightning](https://www.adinstruments.com/products/labchart/lightning).
+[LabChart Lightning](https://adi.to/LabChartLightning)
+is the next generation data acquisition and analysis application from
+ADInstruments. The table is an incredibly powerful feature that pulls together
+summary data from different recordings into one place, allowing you to collate,
+visualise, and analyse all of your data.
+[See here](https://www.adinstruments.com/support/videos/cross-recording-analysis-labchart-lightning)
+for an overview of how to use the table.
+
+This repository contains a set of example scripts that you can use to run
+statistical analyses of the summary data exported from the table. We provide
+template scripts, for a number of different programming languages, that show
+how to load, arrange, and analyse this table data and that you can adapt for
+your data and specific research questions.
+
+---
 
 LabChart Lightning can export the table data in two formats. Firstly, there is
 a 'standard' format where the exported table data is arranged in the same way
@@ -22,3 +34,8 @@ The repository contains:
     + [`MATLAB/`](./MATLAB)
     + [`Python/`](./Python)
     + [`R/`](./R)
+
+---
+
+[![LabChart Lightning logo](.images/lightning_logo.png)](https://adi.to/LabChartLightning)
+[![LabChart Lightning](.images/lightning_application.png)](https://adi.to/LabChartLightning)
