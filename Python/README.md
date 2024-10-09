@@ -34,19 +34,19 @@ Loading raw data...
 Processing data...
 
 group   subject
-Thumb   sub-01     74.953682
-        sub-04     81.638989
-        sub-05     72.717263
 Finger  sub-02     80.716828
         sub-03     85.683245
         sub-06     76.916489
-Name: value, dtype: float64
+Thumb   sub-01     74.953682
+        sub-04     81.638989
+        sub-05     72.717263
+Name: (Mean, BPM), dtype: float64
 
 --------------------------------------------------------------------------------
 Running statistics...
 
              mean       std
-group
+group                      
 Finger  81.105521  4.396284
 Thumb   76.436645  4.642056
 

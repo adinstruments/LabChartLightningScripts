@@ -28,9 +28,15 @@ cat_line(rep("-", 80), collapse = "")
 cat_line("Processing data...")
 cat_line()
 
-# Only retain the group/subject columns and the numeric data
 data <- data %>%
-    select(group, subject, value)
+    # Turn the calculation/unit into column headers that describe the values
+    pivot_wider(
+        names_from=c(calculation, unit),
+        names_glue = "{calculation} ({unit})",
+        values_from=value
+    ) %>%
+    # Only retain the group/subject columns and the numeric data
+    select(group, subject, `Mean (BPM)`)
 
 print(data)
 cat_line()
@@ -43,11 +49,11 @@ cat_line()
 
 summary_stats <- data %>%
     group_by(group) %>%
-    summarise(mean = mean(value), sd = sd(value))
+    summarise(mean = mean(`Mean (BPM)`), sd = sd(`Mean (BPM)`))
 print(summary_stats)
 cat_line()
 
-stats <- t.test(data$value ~ data$group, alternative = "two.sided")
+stats <- t.test(data$`Mean (BPM)` ~ data$group, alternative = "two.sided")
 print(stats)
 
 # -----------------------------------------------------------------------------

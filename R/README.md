@@ -24,7 +24,7 @@ This should produce the following output:
 ✔ forcats   1.0.0     ✔ stringr   1.5.1
 ✔ ggplot2   3.5.1     ✔ tibble    3.2.1
 ✔ lubridate 1.9.3     ✔ tidyr     1.3.1
-✔ purrr     1.0.2
+✔ purrr     1.0.2     
 ── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
 ✖ dplyr::filter() masks stats::filter()
 ✖ dplyr::lag()    masks stats::lag()
@@ -48,14 +48,14 @@ Loading raw data...
 Processing data...
 
 # A tibble: 6 × 3
-  group  subject value
-  <chr>  <chr>   <dbl>
-1 Thumb  sub-01   75.0
-2 Thumb  sub-04   81.6
-3 Thumb  sub-05   72.7
-4 Finger sub-02   80.7
-5 Finger sub-03   85.7
-6 Finger sub-06   76.9
+  group  subject `Mean (BPM)`
+  <chr>  <chr>          <dbl>
+1 Thumb  sub-01          75.0
+2 Thumb  sub-04          81.6
+3 Thumb  sub-05          72.7
+4 Finger sub-02          80.7
+5 Finger sub-03          85.7
+6 Finger sub-06          76.9
 
 --------------------------------------------------------------------------------
 Running statistics...
@@ -69,14 +69,14 @@ Running statistics...
 
 	Welch Two Sample t-test
 
-data:  data$value by data$group
+data:  data$`Mean (BPM)` by data$group
 t = 1.2648, df = 3.9882, p-value = 0.2748
 alternative hypothesis: true difference in means between group Finger and group Thumb is not equal to 0
 95 percent confidence interval:
  -5.591627 14.929379
 sample estimates:
-mean in group Finger  mean in group Thumb
-            81.10552             76.43664
+mean in group Finger  mean in group Thumb 
+            81.10552             76.43664 
 
 --------------------------------------------------------------------------------
 ```

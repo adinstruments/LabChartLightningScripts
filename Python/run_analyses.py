@@ -25,10 +25,20 @@ print("-" * 80)
 print("Processing data...")
 print()
 
-# Set the group/subject columns as the index
-data = data.set_index(["group", "subject"])
-# Only retain the numeric data
-data = data.loc[:, "value"]
+# Reshape the data so that we get:
+#  + The group/subject columns to index the rows
+#  + The calculation/unit to index the columns
+#  + Only retain the numeric values (i.e. drop the recording/signal info)
+# For more complex data, more of the columns can be included to disambiguate
+# the numeric values.
+data = pd.pivot(
+    data,
+    index=["group", "subject"],
+    columns=["calculation", "unit"],
+    values="value",
+)
+# Pull out the data as a series rather than a full dataframe
+data = data.loc[:, ("Mean", "BPM")]
 
 print(data)
 print()
