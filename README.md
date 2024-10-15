@@ -37,5 +37,15 @@ The repository contains:
 
 ---
 
-[![LabChart Lightning logo](.images/lightning_logo.png)](https://adi.to/LabChartLightning)
+<!---
+https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax#specifying-the-theme-an-image-is-shown-to
+--->
+<a href="https://adi.to/LabChartLightning">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset=".images/lightning_logo-dark.png">
+    <source media="(prefers-color-scheme: light)" srcset=".images/lightning_logo-light.png">
+    <img src=".images/lightning_logo-light.png">
+  </picture>
+</a>
+
 [![LabChart Lightning](.images/lightning_application.png)](https://adi.to/LabChartLightning)
