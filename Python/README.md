@@ -1,19 +1,22 @@
 # Python: Analyses of table data from LabChart Lightning
 
-We use [Conda](https://conda.io) to manage dependencies, but
+We use [uv](https://docs.astral.sh/uv) to manage dependencies, but
 [pandas](https://pandas.pydata.org/) and [SciPy](https://scipy.org/) are all
-that are needed to run the simple examples. Installing the packages using Conda
-can be done using the following commands:
-```shell
-conda env create --file environment.yml
-conda activate lightning-analyses
-```
+that are needed to run the simple examples.
 
-Running an analysis of the table data from the simple project can then be done
-using:
+If Python is available and the dependencies are installed, then running an
+analysis of the table data from the simple project can then be done using:
 ```shell
 python run_analyses.py
 ```
+
+However, we recommend using `uv` instead:
+```shell
+uv run run_analyses.py
+```
+While this is arguably overkill for this simple example, keeping track of any
+dependencies via `pyproject.toml` and `uv.lock` makes sharing and reproducing
+analyses far simpler.
 
 This should produce the following output:
 ```
@@ -46,11 +49,11 @@ Name: (Mean, BPM), dtype: float64
 Running statistics...
 
              mean       std
-group                      
+group
 Finger  81.105521  4.396284
 Thumb   76.436645  4.642056
 
-TtestResult(statistic=-1.2648492709117918, pvalue=0.27459661375200434, df=4.0)
+TtestResult(statistic=np.float64(-1.2648492709117918), pvalue=np.float64(0.27459661375200434), df=np.float64(4.0))
 
 --------------------------------------------------------------------------------
 ```

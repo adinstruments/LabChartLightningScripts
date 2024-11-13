@@ -1,9 +1,0 @@
-name: lightning-analyses
-
-channels:
-  - defaults
-
-dependencies:
-  - python = 3
-  - pandas
-  - scipy
