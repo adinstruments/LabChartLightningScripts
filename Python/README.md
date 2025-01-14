@@ -31,7 +31,7 @@ Loading raw data...
 4  Finger  sub-03  ...        Mean  85.683245
 5  Finger  sub-06  ...        Mean  76.916489
 
-[6 rows x 11 columns]
+[6 rows x 12 columns]
 
 --------------------------------------------------------------------------------
 Processing data...

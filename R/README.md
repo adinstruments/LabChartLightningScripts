@@ -32,7 +32,7 @@ This should produce the following output:
 --------------------------------------------------------------------------------
 Loading raw data...
 
-# A tibble: 6 × 11
+# A tibble: 6 × 12
   group  subject recording         regionType regionStartBlock regionStartTime_s
   <chr>  <chr>   <chr>             <chr>                 <dbl>             <dbl>
 1 Thumb  sub-01  Recordings/sub-0… Measureme…                0                10
@@ -41,8 +41,8 @@ Loading raw data...
 4 Finger sub-02  Recordings/sub-0… Measureme…                0                10
 5 Finger sub-03  Recordings/sub-0… Measureme…                0                10
 6 Finger sub-06  Recordings/sub-0… Measureme…                0                10
-# ℹ 5 more variables: regionDuration_s <dbl>, signal <chr>, unit <chr>,
-#   calculation <chr>, value <dbl>
+# ℹ 6 more variables: regionEndBlock <dbl>, regionEndTime_s <dbl>,
+#   signal <chr>, unit <chr>, calculation <chr>, value <dbl>
 
 --------------------------------------------------------------------------------
 Processing data...

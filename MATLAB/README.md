@@ -18,17 +18,17 @@ Loading raw data...
 
 data =
 
-  6×11 table
+  6×12 table
 
-      group        subject                     recording                     regionType       regionStartBlock    regionStartTime_s    regionDuration_s                signal                 unit      calculation    value
-    __________    __________    _______________________________________    _______________    ________________    _________________    ________________    ______________________________    _______    ___________    ______
+      group        subject                     recording                     regionType       regionStartBlock    regionStartTime_s    regionEndBlock    regionEndTime_s                signal                 unit      calculation    value
+    __________    __________    _______________________________________    _______________    ________________    _________________    ______________    _______________    ______________________________    _______    ___________    ______
 
-    {'Thumb' }    {'sub-01'}    {'Recordings/sub-01_2023-07-31.lclrec'}    {'Measurement'}           0                   10                   40           {'Pulse Transducer_bpf_eRate'}    {'BPM'}     {'Mean'}      74.954
-    {'Thumb' }    {'sub-04'}    {'Recordings/sub-04_2023-07-31.lclrec'}    {'Measurement'}           0                   10                   40           {'Pulse Transducer_bpf_eRate'}    {'BPM'}     {'Mean'}      81.639
-    {'Thumb' }    {'sub-05'}    {'Recordings/sub-05_2023-07-31.lclrec'}    {'Measurement'}           0                   10                   40           {'Pulse Transducer_bpf_eRate'}    {'BPM'}     {'Mean'}      72.717
-    {'Finger'}    {'sub-02'}    {'Recordings/sub-02_2023-07-31.lclrec'}    {'Measurement'}           0                   10                   40           {'Pulse Transducer_bpf_eRate'}    {'BPM'}     {'Mean'}      80.717
-    {'Finger'}    {'sub-03'}    {'Recordings/sub-03_2023-07-31.lclrec'}    {'Measurement'}           0                   10                   40           {'Pulse Transducer_bpf_eRate'}    {'BPM'}     {'Mean'}      85.683
-    {'Finger'}    {'sub-06'}    {'Recordings/sub-06_2023-07-31.lclrec'}    {'Measurement'}           0                   10                   40           {'Pulse Transducer_bpf_eRate'}    {'BPM'}     {'Mean'}      76.916
+    {'Thumb' }    {'sub-01'}    {'Recordings/sub-01_2023-07-31.lclrec'}    {'Measurement'}           0                   10                  0                 50           {'Pulse Transducer_bpf_eRate'}    {'BPM'}     {'Mean'}      74.954
+    {'Thumb' }    {'sub-04'}    {'Recordings/sub-04_2023-07-31.lclrec'}    {'Measurement'}           0                   10                  0                 50           {'Pulse Transducer_bpf_eRate'}    {'BPM'}     {'Mean'}      81.639
+    {'Thumb' }    {'sub-05'}    {'Recordings/sub-05_2023-07-31.lclrec'}    {'Measurement'}           0                   10                  0                 50           {'Pulse Transducer_bpf_eRate'}    {'BPM'}     {'Mean'}      72.717
+    {'Finger'}    {'sub-02'}    {'Recordings/sub-02_2023-07-31.lclrec'}    {'Measurement'}           0                   10                  0                 50           {'Pulse Transducer_bpf_eRate'}    {'BPM'}     {'Mean'}      80.717
+    {'Finger'}    {'sub-03'}    {'Recordings/sub-03_2023-07-31.lclrec'}    {'Measurement'}           0                   10                  0                 50           {'Pulse Transducer_bpf_eRate'}    {'BPM'}     {'Mean'}      85.683
+    {'Finger'}    {'sub-06'}    {'Recordings/sub-06_2023-07-31.lclrec'}    {'Measurement'}           0                   10                  0                 50           {'Pulse Transducer_bpf_eRate'}    {'BPM'}     {'Mean'}      76.916
 
 --------------------------------------------------------------------------------
 Processing data...

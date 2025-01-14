@@ -1,7 +1,7 @@
-group,subject,recording,regionType,regionStartBlock,regionStartTime_s,regionDuration_s,signal,unit,calculation,value
-"Thumb","sub-01","Recordings/sub-01_2023-07-31.lclrec","Measurement",0,10,40,"Pulse Transducer_bpf_eRate","BPM",Mean,74.95368215560913
-"Thumb","sub-04","Recordings/sub-04_2023-07-31.lclrec","Measurement",0,10,40,"Pulse Transducer_bpf_eRate","BPM",Mean,81.63898924446106
-"Thumb","sub-05","Recordings/sub-05_2023-07-31.lclrec","Measurement",0,10,40,"Pulse Transducer_bpf_eRate","BPM",Mean,72.71726265907287
-"Finger","sub-02","Recordings/sub-02_2023-07-31.lclrec","Measurement",0,10,40,"Pulse Transducer_bpf_eRate","BPM",Mean,80.71682803153992
-"Finger","sub-03","Recordings/sub-03_2023-07-31.lclrec","Measurement",0,10,40,"Pulse Transducer_bpf_eRate","BPM",Mean,85.68324518585204
-"Finger","sub-06","Recordings/sub-06_2023-07-31.lclrec","Measurement",0,10,40,"Pulse Transducer_bpf_eRate","BPM",Mean,76.91648893642426
+group,subject,recording,regionType,regionStartBlock,regionStartTime_s,regionEndBlock,regionEndTime_s,signal,unit,calculation,value
+"Thumb","sub-01","Recordings/sub-01_2023-07-31.lclrec","Measurement",0,10,0,50,"Pulse Transducer_bpf_eRate","BPM","Mean",74.95368215560913
+"Thumb","sub-04","Recordings/sub-04_2023-07-31.lclrec","Measurement",0,10,0,50,"Pulse Transducer_bpf_eRate","BPM","Mean",81.63898924446106
+"Thumb","sub-05","Recordings/sub-05_2023-07-31.lclrec","Measurement",0,10,0,50,"Pulse Transducer_bpf_eRate","BPM","Mean",72.71726265907287
+"Finger","sub-02","Recordings/sub-02_2023-07-31.lclrec","Measurement",0,10,0,50,"Pulse Transducer_bpf_eRate","BPM","Mean",80.71682803153992
+"Finger","sub-03","Recordings/sub-03_2023-07-31.lclrec","Measurement",0,10,0,50,"Pulse Transducer_bpf_eRate","BPM","Mean",85.68324518585204
+"Finger","sub-06","Recordings/sub-06_2023-07-31.lclrec","Measurement",0,10,0,50,"Pulse Transducer_bpf_eRate","BPM","Mean",76.91648893642426
