@@ -1,39 +1,25 @@
-# Analyses of table data from LabChart Lightning
+# LabChart Lightning: Template Scripts
 
 [LabChart Lightning](https://adi.to/LabChartLightning)
 is the next generation data acquisition and analysis application from
-ADInstruments. The table is an incredibly powerful feature that pulls together
-summary data from different recordings into one place, allowing you to collate,
-visualise, and analyse all of your data.
-[See here](https://www.adinstruments.com/support/videos/cross-recording-analysis-labchart-lightning)
-for an overview of how to use the table.
-
-This repository contains a set of example scripts that you can use to run
-statistical analyses of the summary data exported from the table. We provide
-template scripts, for a number of different programming languages, that show
-how to load, arrange, and analyse this table data and that you can adapt for
-your data and specific research questions.
+ADInstruments. This repository contains a number of templates that demonstrate
+both how to use plugins to extend the functionality within LabChart Lightning,
+and how to analyse the data you can export.
 
 ---
 
-LabChart Lightning can export the table data in two formats. Firstly, there is
-a 'standard' format where the exported table data is arranged in the same way
-as it is displayed in the application. This format is designed for use with
-Excel and other spreadsheet editors. Secondly, there is a 'raw' format that is
-designed to be machine readable. This is intended for running analyses using
-software languages like Python or R.
-
 The repository contains:
- + A 'simple' example project, `simple.lclpak`. This contains data from
-   multiple subjects across two groups. The question is whether there is a
-   group difference in the collected data. The data exported from the table
-   can be found in `simple_standard.csv` and `simple_raw.csv`.
- + A set of example scripts that demonstrate how to run analyses of the
-   exported data in the raw format for different programming languages:
-    + [`JASP/`](./JASP)
-    + [`MATLAB/`](./MATLAB)
-    + [`Python/`](./Python)
-    + [`R/`](./R)
+ + [`stimulator_scripts/`](./stimulator_scripts): Examples of how to use
+   LabChart Lightning's scripting capabilities to output custom stimulus
+   waveforms.
+ + [`table_analyses/`](./table_analyses): Template scripts for various
+   programming languages that show how to run statistical analyses on the
+   summary data exported from LabChart Lightning.
+
+The [Lightning Device SDK](https://github.com/adinstruments/LightningDeviceSDK)
+allows hardware manufacturers and researchers to connect their data aquisition
+devices to LabChart Lightning, and can be found in a separate repository:
+<https://github.com/adinstruments/LightningDeviceSDK>.
 
 ---
 
@@ -42,10 +28,10 @@ https://docs.github.com/en/get-started/writing-on-github/getting-started-with-wr
 --->
 <a href="https://adi.to/LabChartLightning">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset=".images/lightning_logo-dark.png">
-    <source media="(prefers-color-scheme: light)" srcset=".images/lightning_logo-light.png">
-    <img src=".images/lightning_logo-light.png">
+    <source media="(prefers-color-scheme: dark)" srcset="/.images/lightning_logo-dark.png">
+    <source media="(prefers-color-scheme: light)" srcset="/.images/lightning_logo-light.png">
+    <img src="/.images/lightning_logo-light.png">
   </picture>
 </a>
 
-[![LabChart Lightning](.images/lightning_application.png)](https://adi.to/LabChartLightning)
+[![LabChart Lightning](/.images/lightning_application.png)](https://adi.to/LabChartLightning)
